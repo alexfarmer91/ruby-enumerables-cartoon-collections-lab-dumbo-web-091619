@@ -26,4 +26,10 @@ def find_the_cheese(array)
    p "cheddar"
  else if array.detect { |n| n == cheese_types[1] } == cheese_types[1]
    p "gouda"
+ else if array.detect { |n| n == cheese_types[2] } == cheese_types[2]
+   p "camembert"
+ else 
+   p nil 
+ end
+ end
    
