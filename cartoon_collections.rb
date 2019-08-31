@@ -21,16 +21,15 @@ end
 def find_the_cheese(array)
 
   cheese_types = ["cheddar", "gouda", "camembert"]
-
- if array.detect { |n| n == cheese_types[0] } != nil
-   p "cheddar"
- else if array.detect { |n| n == cheese_types[1] } != nil
-   p "gouda"
- else if array.detect { |n| n == cheese_types[2] } != nil
-   p "camembert"
+ i = 0
+ while i < 3 do
+ if array.detect { |n| n == cheese_types[i] } != nil
+   p cheese_types[i]
+   i += 1
  else 
-   p nil 
+   p nil
+   i += 1
+   
  end
  end
- end
- end
+ 
