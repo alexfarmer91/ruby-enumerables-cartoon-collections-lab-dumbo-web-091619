@@ -32,6 +32,7 @@ def find_the_cheese(array)
     p nil 
   else 
     cheese_exists = array.detect { |n| n == cheese_types[i] }
+    i += 1 
   end
 end
  p cheese_exists
